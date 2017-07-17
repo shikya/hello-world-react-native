@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { Paper } from './src/Paper';
+import { Header } from './src/Header/Header';
+import { AlbumList } from './src/Album/AlbumList'
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.mainView}>
-        <Paper />
+        <Header headerText={'Albums'}/>
+        <AlbumList />
       </View>
     );
   }
@@ -14,7 +16,6 @@ export default class App extends React.Component {
 
 const styles = StyleSheet.create({
   mainView: {
-    marginTop: 20,
   },
   container: {
     flex: 1,
